@@ -1,3 +1,12 @@
-let today = new Date()
+const today = new Date()
 
-let thisYear = today.getFullYear()
+const thisYear = today.getFullYear()
+
+const footer = document.querySelector('footer')
+
+const copyright = document.createElement('p')
+
+copyright.innerHTML = `Victor Valdez ${thisYear}`
+
+
+
