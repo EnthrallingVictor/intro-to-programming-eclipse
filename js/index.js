@@ -6,7 +6,7 @@ const footer = document.querySelector('footer')
 
 const copyright = document.createElement('p')
 
-copyright.innerHTML = `Victor Valdez ${thisYear}`
+copyright.innerText = `Victor Valdez ${thisYear}`
 
 footer.appendChild(copyright)
 
@@ -14,11 +14,38 @@ const skills = [`Programming`, `HTML`, `Javascript`, `CSS`, `Customer Support`, 
 
 const skillsSection = document.querySelector('#skills')
 
-let skillsList = skillsSection.querySelector('ul')
+const skillsList = skillsSection.querySelector('ul')
 
 for (let i=0; i<skills.length; i++) {
     let skill = document.createElement('li')
     skill.innerHTML = skills[i]
     skillsList.appendChild(skill)
 }
+
+const messageForm = document.querySelector('[name=leave_message]')
+
+messageForm.addEventListener('submit', (Event) => {
+    Event.preventDefault()
+    const name = Event.target.name.value
+    const email = Event.target.email.value
+    const message = Event.target.message.value
+    console.log(`${name}, ${email}, ${message}`)
+
+    const messageSection = document.querySelector('#messages')
+    const messageList = messageSection.querySelector('ul')
+    const newMessage = document.createElement('li')
+    newMessage.innerHTML = `<a href='mailto: ${email}'> ${name} </a> wrote: <span>${message}</span>`
+    
+    const removeButton = document.createElement('button')
+    removeButton.innerText = 'Remove'
+    removeButton.addEventListener('click', (Event) => {
+        const entry = removeButton.parentNode
+        entry.remove()
+    })
+    newMessage.appendChild(removeButton)
+
+    messageList.appendChild(newMessage)
+
+    messageForm.reset()
+})
 
