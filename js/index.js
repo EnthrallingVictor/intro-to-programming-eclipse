@@ -6,7 +6,8 @@ const footer = document.querySelector('footer')
 
 const copyright = document.createElement('p')
 
-copyright.innerText = `Victor Valdez ${thisYear}`
+copyright.innerText = `© Victor Valdez ${thisYear}`
+copyright.classList.add('copyright')
 
 footer.appendChild(copyright)
 
@@ -18,7 +19,8 @@ const skillsList = skillsSection.querySelector('ul')
 
 for (let i=0; i<skills.length; i++) {
     let skill = document.createElement('li')
-    skill.innerHTML = skills[i]
+    skill.innerHTML = `⇪ ${skills[i]} ⇪`
+    skill.classList.add('skillLvlUp')
     skillsList.appendChild(skill)
 }
 
@@ -34,7 +36,7 @@ messageForm.addEventListener('submit', (Event) => {
     const messageSection = document.querySelector('#messages')
     const messageList = messageSection.querySelector('ul')
     const newMessage = document.createElement('li')
-    newMessage.innerHTML = `<a href='mailto: ${email}'> ${name} </a> wrote: <span>${message}</span>`
+    newMessage.innerHTML = `<a href='mailto: ${email}'>${name}</a> wrote: <span>${message}</span>`
     
     const removeButton = document.createElement('button')
     removeButton.innerText = 'Remove'

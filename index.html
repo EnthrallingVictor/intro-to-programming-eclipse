@@ -7,60 +7,74 @@
         <meta name='keywords' content='portfolio, projects, victor' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <meta name='author' content='Victor Valdez'>
+        <link rel='stylesheet' href='css/index.css'>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Pacifico&family=Playfair+Display+SC&family=Press+Start+2P&family=Quicksand&display=swap');
+            </style>
     </head>
 
     <body>
 
         <h1>Victor Valdez</h1>
 
-        <section>
+        <section id='about'>
             <h2>About</h2>
             <p>I'm Victor Valdez (he/him) from Mooresville, NC.  A Retail Manager turned aspiring Software Developer.  Gay, Latinx, and Cis.  An avid gamer that enjoys connecting with people through a variety of games.  Ross Geller, Glinda, and Starfire wrapped up into one person.</p>
         </section>
-
-        <section>
-            <h2>Experience</h2>
-            <ul>
-                <li>Charlotte Pride - Volunteer</li>
-                <li>CTD - Introduction to Programming</li>
-                <li>CVS Pharmacy - Retail Manager</li>
-                <li>Allstate Insurance - Customer Experience Specialist</li>
-            </ul>
-        </section>
-
+        
         <section id='skills'>
             <h2>Skills</h2>
                 <ul>
                 </ul>
-
         </section>
 
-
-        <section>
-            <h2>Connect</h2>
+        <section id='experience'>
+            <h2>Experience</h2>
             <ul>
-                <li><a href='mailto: EnthrallingVictor29@gmail.com'>EnthrallingVictor29@gmail.com</a></li>
-                <li><a href='https://www.facebook.com/EnthrallingVictor' target='_blank'>Facebook</a></li>
-                <li><a href='https://Github.com/EnthrallingVictor'>Github</a></li>
+                <li class='exLvlUp'>
+                    <span><strong>Charlotte Pride</strong> - Programs Volunteer Team</span>
+                    <span>Apr. 2021 to Present</span>
+                </li>
+                <li class='exLvlUp'>
+                    <span><strong>Code the Dream</strong> - Introduction to Programming</span>
+                    <span>Apr. 2021 to Present</span>
+                </li>
+                <li class='exLvlUp'>
+                    <span><strong>CVS Pharmacy</strong> - Retail Manager</span>
+                    <span>Aug. 2011 to Present</span>
+                </li>
+                <li class='exLvlUp'>
+                    <span><strong>Allstate Insurance</strong> - Customer Experience Specialist</span>
+                    <span>Aug. 2012 to Sept. 2015</span>
+                </li>
             </ul>
         </section>
 
-        <section>
+        <section id='connect'>
+            <h2>Connect</h2>
+            <ul id='contactList'>
+                <li><a href='mailto: EnthrallingVictor29@gmail.com'>EnthrallingVictor29@gmail.com</a></li>
+                <li><a href='https://www.facebook.com/EnthrallingVictor' target='_blank'>Facebook</a></li>
+                <li><a href='https://Github.com/EnthrallingVictor' target='_blank'>Github</a></li>
+            </ul>
+        </section>
+
+        <section id='leaveAMessage'>
             <h2>Leave a Message</h2>
             <form name='leave_message'>
-                <label>Name</label>
+                <label class='msgInput'>Name:</label>
                 <br>
                 <input type='text' name='name' required='true'>
                 <br>
-                <label>Email</label>
+                <label class='msgInput'>Email:</label>
                 <br>
                 <input type='email' name='email' required='true'>
                 <br>
-                <label>Message</label>
+                <label class='msgInput'>Message:</label>
                 <br>
                 <textarea name='message' required='true'></textarea>
                 <br>
-                <button type='submit'>Submit</button>
+                <button id='post' type='submit'>Post!!</button>
             </form>
         </section>
 
