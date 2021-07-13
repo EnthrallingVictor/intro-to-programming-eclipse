@@ -1,0 +1,121 @@
+@media (max-width: 600px) {
+}
+
+@font-face {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Playfair Display SC', serif;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Quicksand', sans-serif;
+    src: url(C:\Users\victo\Programming\intro-to-programming-eclipse\Anton,Lobster,Pacifico,Playfair_Display_SC,Press_Start_2P,etc.zip)
+}
+
+body {
+    background-color: #9e646c;
+    color: #9fdaf5;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    text-shadow: 1px 1px 1px black;
+}
+h1 {
+    font-family: 'Lobster';
+    font-weight: lighter;
+    font-size: 70px;
+    text-shadow: 3px 3px 2px black;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Press Start 2P';
+    font-size: 18px;
+    font-weight: lighter;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+section #contactList {
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+ul .exLvlUp {
+    padding: .25rem;
+    width: fit-content;
+    display: block;
+    background-color: #039628;
+    border: 2px solid #2dcc55;
+    border-radius: 6px 0px 6px 0px;
+    margin: 5px;
+}
+
+section .skillLvlUp {
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #9fdaf5;
+    text-align: center;
+    padding: .20rem .75rem;
+    width: fit-content;
+    display: inline-block;
+    background-color: #2dcc55;
+    border: thick outset #039628;
+    border-radius: 10px;
+    margin: .25rem;
+}
+
+#leaveAMessage {
+    padding: .5rem 1rem;
+    width: fit-content;
+    background-color: #c4828b;
+    border: solid #363434;
+    border-radius: 25px 25px 0px 0px;
+    margin: .25rem;
+}
+
+section .msgInput {
+    color: #363434;
+    font-family: 'Pacifico';
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+input[type=text], input[type=email] {
+    display: block;
+    width: 45%;
+    margin: 2px 0;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    outline: none;
+}
+
+#post {
+    color: #BA916D;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #5F2623;
+    border-radius: 15px;
+    width: fit-content;
+    margin: 1.5px 0;
+}
+
+p, ul {
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 4rem;
+}
+
+footer .copyright {
+    color: white;
+    text-align: right;
+    display: block;
+    margin: 1px;
+    background-color: #c4828b;
+    border-radius: 15px;;
+    padding: 1px 8px;
+}
