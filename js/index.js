@@ -51,3 +51,35 @@ messageForm.addEventListener('submit', (Event) => {
     messageForm.reset()
 })
 
+// AJAX Code
+// const githubRequest = new XMLHttpRequest()
+
+// githubRequest.addEventListener('load', function() {
+//     const repos = JSON.parse(this.response)
+
+//     const projectSection = document.querySelector('#projects')
+//     const projectList = projectSection.querySelector('ul')
+
+//     for (let i=0; i<repos.length; i++) {
+//         const project = document.createElement('li')
+//         project.innerHTML = `<a href='${repos[i].html_url}'>${repos[i].name}</a>`
+//         projectList.appendChild(project)
+//     }
+// })
+
+// githubRequest.open('GET', 'https://api.github.com/users/EnthrallingVictor/repos')
+// githubRequest.send()
+
+fetch('https://api.github.com/users/EnthrallingVictor/repos')
+    .then(res => res.json())
+    .then(repos => {
+        const projectSection = document.querySelector('#projects')
+        const projectList = projectSection.querySelector('ul')
+
+        for (let i=0; i<repos.length; i++) {
+            const project = document.createElement('li')
+            project.innerHTML = `<a href='${repos[i].html_url}'>${repos[i].name}</a>`
+            projectList.appendChild(project)
+        }
+    })
+    .catch(error => console.log('There is an error loading the request', error))

@@ -1,6 +1,12 @@
 @media (max-width: 600px) {
 }
 
+* {
+    margin: 0;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'Anton', sans-serif;
     font-family: 'Lobster', cursive;
@@ -11,6 +17,75 @@
     src: url(C:\Users\victo\Programming\intro-to-programming-eclipse\Anton,Lobster,Pacifico,Playfair_Display_SC,Press_Start_2P,etc.zip)
 }
 
+/* #imgAndLogo {
+    position: relative;
+    width: 50%;
+}
+
+#headshot {
+    opacity: 1;
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#initials {
+    opacity: 0;
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#imgAndLogo:hover #headshot {
+    opacity: 0.3;
+}
+
+#imgAndLogo:hover #initials {
+    opacity: 1;
+}
+
+#initials {
+    background-color: #9fdaf5;
+    color: #9e424e;
+    font-family: 'Lobster', cursive;
+    font-size: 1em;
+    padding: 16px;
+    border: 5px solid #9fdaf5;
+    border-radius: 100%;
+} */
+
+#topNav {
+    background-color: #9e424e;
+    padding: 25px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 15px;
+    width: 95vw;
+    position: fixed;
+}
+
+#topNav a {
+    color: #9fdaf5;
+    display: inline-block;
+    border: 2px solid #9fdaf5;
+    padding: 4px;
+    margin: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+#topNav a:hover {
+    background-color: #9fdaf5;
+    color: #9e424e;
+  }
+
 body {
     background-color: #9e646c;
     color: #9fdaf5;
@@ -18,6 +93,11 @@ body {
     font-size: 14px;
     text-shadow: 1px 1px 1px black;
 }
+
+section {
+    margin: 50px 0;
+}
+
 h1 {
     font-family: 'Lobster';
     font-weight: lighter;
@@ -30,25 +110,15 @@ h2 {
     font-family: 'Press Start 2P';
     font-size: 18px;
     font-weight: lighter;
+    text-align: center;
     text-shadow: 2px 2px 2px black;
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
-}
-section #contactList {
-    font-style: italic;
-    font-weight: bold;
-    text-shadow: none;
-}
-
-ul .exLvlUp {
-    padding: .25rem;
-    width: fit-content;
-    display: block;
-    background-color: #039628;
-    border: 2px solid #2dcc55;
-    border-radius: 6px 0px 6px 0px;
-    margin: 5px;
+    background-color: #9e424e;
+    max-width: max-content;
+    border: 10px solid #9e424e;
+    border-radius: 15px;
 }
 
 section .skillLvlUp {
@@ -59,10 +129,38 @@ section .skillLvlUp {
     padding: .20rem .75rem;
     width: fit-content;
     display: inline-block;
-    background-color: #2dcc55;
-    border: thick outset #039628;
+    background-color: #0090b8;
+    border: thick outset #006989;
     border-radius: 10px;
     margin: .25rem;
+}
+
+ul .exLvlUp {
+    color: #c4828b;
+    padding: .25rem;
+    display: block;
+    background-color: #0090b8;
+    border: 2px solid #006989;
+    border-radius: 15px 0px 15px 0px;
+    margin: 5px;
+}
+
+#expContainer {
+    display: flex;
+}
+
+/* .dates::after {
+    
+} */
+
+/* li.exLvlUp {
+    
+} */
+
+section #contactList {
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: none;
 }
 
 #leaveAMessage {
@@ -86,7 +184,7 @@ input[type=text], input[type=email] {
     width: 45%;
     margin: 2px 0;
     border: 2px solid black;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 input[type=text]:focus, input[type=email]:focus {
