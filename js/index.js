@@ -1,15 +1,18 @@
-const today = new Date()
+// add copyright and year
 
+const today = new Date()
 const thisYear = today.getFullYear()
 
-const footer = document.querySelector('footer')
+const footer = document.querySelector('div#footerContainer')
 
-const copyright = document.createElement('p')
+const copyright = document.querySelector('p#copyright')
 
 copyright.innerText = `© Victor Valdez ${thisYear}`
-copyright.classList.add('copyright')
+// copyright.classList.add('copyright')
 
 footer.appendChild(copyright)
+
+// add skills section
 
 const skills = [`Programming`, `HTML`, `Javascript`, `CSS`, `Customer Support`, `Spanish`]
 
@@ -19,10 +22,12 @@ const skillsList = skillsSection.querySelector('ul')
 
 for (let i=0; i<skills.length; i++) {
     let skill = document.createElement('li')
-    skill.innerHTML = `⇪ ${skills[i]} ⇪`
+    skill.innerHTML = `${skills[i]}`
     skill.classList.add('skillLvlUp')
     skillsList.appendChild(skill)
 }
+
+// Message form
 
 const messageForm = document.querySelector('[name=leave_message]')
 
@@ -37,6 +42,7 @@ messageForm.addEventListener('submit', (Event) => {
     const messageList = messageSection.querySelector('ul')
     const newMessage = document.createElement('li')
     newMessage.innerHTML = `<a href='mailto: ${email}'>${name}</a> wrote: <span>${message}</span>`
+    newMessage.classList.add('newMessage')
     
     const removeButton = document.createElement('button')
     removeButton.innerText = 'Remove'

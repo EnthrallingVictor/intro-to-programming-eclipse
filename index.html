@@ -14,102 +14,108 @@
     </head>
 
     <header id='topNav'>
-            <!-- <div id='imgAndLogo'>
-                <img src='headshot-04-2021.jpg' alt='Victor Valdez' id='headshot'>
-                <div id='initials'>
-                    VV
-                </div>
-            </div> -->
             <h1>Victor Valdez</h1>
-            <a href='#about'>About</a>
-            <a href='#skills'>Skills</a>
-            <a href='#experience'>Experience</a>
-            <a href='#projects'>Projects</a>
-            <a href='#connect'>Connect</a>
-            <a href='#leaveAMessage'>Leave a Message</a>
-            <a href='#messages'>Messages</a>
+            <h2 id='pronouns'>Pronouns: He / Him / His</h2>
+            <div id='navLinks'>
+                <a href='#about'>About</a>
+                <a href='#skills'>Skills</a>
+                <a href='#experience'>Experience</a>
+                <a href='#projects'>Projects</a>
+                <a href='#leaveAMessage'>Leave a Message</a>
+            </div>
     </header>
 
-    <body>
-        <section id='about'>
-            <h2>About</h2>
-            <p>I'm Victor Valdez (he/him) from Mooresville, NC.  A Retail Manager turned aspiring Software Developer.  Gay, Latinx, and Cis.  An avid gamer that enjoys connecting with people through a variety of games.  Ross Geller, Glinda, and Starfire wrapped up into one person.</p>
-        </section>
-        
-        <section id='skills'>
-            <h2>Skills</h2>
-                <ul>
-                </ul>
-        </section>
-
-        <section id='experience'>
-            <h2>Experience</h2>
-            <div class='expContainer'>
-                <ul>
-                    <li id='cltPride' class='exLvlUp'>
-                        <span class='dates'><strong>Charlotte Pride</strong> - Programs Volunteer Team</span>
-                        <span>Apr. 2021 to Present</span>
-                    </li>
-                    <li id='ctd' class='exLvlUp'>
-                        <span><strong>Code the Dream</strong> - Introduction to Programming</span>
-                        <span class='dates'>Apr. 2021 to Present</span>
-                    </li>
-                    <li id='cvs' class='exLvlUp'>
-                        <span><strong>CVS Pharmacy</strong> - Retail Manager</span>
-                        <span class='dates'>Aug. 2011 to Present</span>
-                    </li>
-                    <li id='allstate' class='exLvlUp'>
-                        <span><strong>Allstate Insurance</strong> - Customer Experience Specialist</span>
-                        <span class='dates'>Aug. 2012 to Sept. 2015</span>
-                    </li>
-                </ul>
+    <div id='wholeContainer'>
+        <body>
+            <div id='imgAndLogo'>
+                <img src='headshot-04-2021.jpg' alt='Victor Valdez' id='headshot'>
+                <!-- <div id='initials'>
+                    VV
+                </div> -->
             </div>
-        </section>
+            <section id='about'>
+                <h2>About</h2>
+                <p>I'm Victor Valdez (he/him) from Mooresville, NC.  A Retail Manager turned aspiring Software Developer.  Gay, Latinx, and Cis.  An avid gamer that enjoys connecting with people through a variety of games.  Ross Geller, Glinda, and Starfire wrapped up into one person.</p>
+            </section>
+            
+            <section id='skills'>
+                <h2>Skills</h2>
+                    <ul class='skillsContainer'>
+                    </ul>
+            </section>
 
-        <section id='projects'>
-            <h2>Projects</h2>
-            <ul>
-            </ul>
-        </section>
+            <section id='experience'>
+                <h2>Experience</h2>
+                <div>
+                    <ul class='expContainer'>
+                        <li id='cltPride' class='exLvlUp'>
+                            <span><strong>Charlotte Pride</strong> - Programs Volunteer Team</span>
+                            <span>Apr. 2021 to Present</span>
+                        </li>
+                        <li id='ctd' class='exLvlUp'>
+                            <span><strong>Code the Dream</strong> - Introduction to Programming</span>
+                            <span>Apr. 2021 to Present</span>
+                        </li>
+                        <li id='cvs' class='exLvlUp'>
+                            <span><strong>CVS Pharmacy</strong> - Retail Manager</span>
+                            <span>Aug. 2011 to Present</span>
+                        </li>
+                        <li id='allstate' class='exLvlUp'>
+                            <span><strong>Allstate Insurance</strong> - Customer Experience Specialist</span>
+                            <span>Aug. 2012 to Sept. 2015</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-        <section id='connect'>
-            <h2>Connect</h2>
-            <ul id='contactList'>
-                <li><a href='mailto: EnthrallingVictor29@gmail.com'>EnthrallingVictor29@gmail.com</a></li>
-                <li><a href='https://www.facebook.com/EnthrallingVictor' target='_blank'>Facebook</a></li>
-                <li><a href='https://Github.com/EnthrallingVictor' target='_blank'>Github</a></li>
-            </ul>
-        </section>
+            <section id='projects'>
+                <h2>Projects</h2>
+                <ul>
+                </ul>
+            </section>
 
-        <section id='leaveAMessage'>
-            <h2>Leave a Message</h2>
-            <form name='leave_message'>
-                <label class='msgInput'>Name:</label>
-                <br>
-                <input type='text' name='name' required='true'>
-                <br>
-                <label class='msgInput'>Email:</label>
-                <br>
-                <input type='email' name='email' required='true'>
-                <br>
-                <label class='msgInput'>Message:</label>
-                <br>
-                <textarea name='message' required='true'></textarea>
-                <br>
-                <button id='post' type='submit'>Post!!</button>
-            </form>
-        </section>
+            <section id='leaveAMessage'>
+                <h2>Leave a Message</h2>
+                <form id='messageForm' name='leave_message'>
+                    <label class='msgInput'>Name:</label>
+                    <br>
+                    <input type='text' name='name' required='true'>
+                    <br>
+                    <label class='msgInput'>Email:</label>
+                    <br>
+                    <input type='email' name='email' required='true'>
+                    <br>
+                    <label class='msgInput'>Message:</label>
+                    <br>
+                    <textarea name='message' required='true'></textarea>
+                    <br>
+                    <button type='submit'>Post!!</button>
+                </form>
+            </section>
 
-        <section id='messages'>
-            <h2>Messages</h2>
-            <ul>
-            </ul>
-        </section>
+            <section id='messages'>
+                <h2>Messages</h2>
+                <ul id='listOfMessages'>
+                </ul>
+            </section>
 
-        <footer></footer>
+            <footer>
+                <div id='footerContainer'>
+                    <p id='copyright'>
+                    </p>
 
-        <script src="js/index.js"></script>
-    </body>
+                    <ul id='contactList'>
+                        <li><a href='mailto: EnthrallingVictor29@gmail.com'>Email</a></li>
+                        <li><a href='https://www.facebook.com/EnthrallingVictor' target='_blank'>Facebook</a></li>
+                        <li><a href='https://twitter.com/EnthrallingVict' target='_blank'>Twitter</a></li>
+                        <li><a href='https://Github.com/EnthrallingVictor' target='_blank'>Github</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+            <script src="js/index.js"></script>
+        </body>
+    </div>
 
 
 
